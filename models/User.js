@@ -2,7 +2,13 @@ const mongoose = require('mongoose');
 
 
 const userSchema = new mongoose.Schema ({
+    users: [{
     firstName: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 40,
+    }, lastName: {
         type: String,
         required: true,
         minlength: 1,
@@ -13,7 +19,7 @@ const userSchema = new mongoose.Schema ({
         required: true,
         minlength: 3,
     },
-});
+}]});
 
 const User = mongoose.model('User', userSchema);
 
