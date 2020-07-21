@@ -19,6 +19,9 @@ app.get('/', (req,res) => {
   res.render('index');
 });
 
+// User Routes
+app.use('/users', userCtrl)
+
 // Server Listener
 app.listen(PORT, ()=>{
   console.log(`This server is running on ${PORT}`);
