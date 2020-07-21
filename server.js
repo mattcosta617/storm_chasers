@@ -18,7 +18,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended: false}));
 
 // Controllers
-const userCtrl = require('./controllers/UserController');
+const userCtrl = require('./controllers/userController');
 
 // Routes
 app.get('/', (req,res) => {
