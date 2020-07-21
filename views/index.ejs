@@ -6,7 +6,43 @@
 <!-- Header -->
     <%- include('partials/header') %>
     <main>
-
+        <!-- Hero Image -->
+        <div id="hero-image">
+            <img src="https://picsum.photos/600/200">
+            <div>
+                <p>Weather Placeholder</p>
+            </div>
+        </div>
+        <!-- Tagline -->
+        <h1>Find the Storm. Be the Storm</h1>
+        <!-- Map -->
+        <div id="map">
+            <img src="https://via.placeholder.com/150" alt="">
+        </div>
+        <!-- Sign Up Form -->
+        <div id="signup">
+            <form action="/admin" method="POST">
+                <input type="text" name="firstName" placeholder="First Name">
+                <input type="text" name="lastName" placeholder="Last Name">
+                <input type="text" name="email" placeholder="Email Address">
+                <button type="submit" value="upload">Sign Up</button>
+            </form>
+        </div>
+        <!-- News -->
+        <div id="news">
+            <h2>News</h2>
+            <img src="https://via.placeholder.com/150" alt="">
+        </div>
+        <!-- Events -->
+        <div id="events">
+            <h2>Events</h2>
+            <img src="https://via.placeholder.com/150" alt="">
+        </div>
+        <!-- Gallery -->
+        <div id="gallery">
+            <h2>Gallery</h2>
+            <img src="https://via.placeholder.com/150" alt="">
+        </div>
     </main>
 <!-- Footer -->
     <%- include('partials/footer') %>
