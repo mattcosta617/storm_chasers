@@ -5,38 +5,84 @@
 <body id="landing-page-body">
 <!-- Header -->
     <%- include('partials/header') %>
-    <main>
+    <main class="container">
         <!-- Hero Image -->
-        <div id="hero-image">
-            <img src="https://picsum.photos/600/200">
-            <div>
+        <div id="col">
+            <div id="hero-image">
+                <img src="https://picsum.photos/600/200">
                 <p>Weather Placeholder</p>
             </div>
         </div>
         <!-- Tagline -->
         <h1>Find the Storm. Be the Storm</h1>
-        <!-- Map -->
-        <div id="map">
-            <img src="https://via.placeholder.com/150" alt="">
+        <div class="row">
+            <!-- Map -->
+            <div class="col">
+                <p>Map Placeholder</p>
+                <img src="https://via.placeholder.com/150" alt="">
+            </div>
+            <!-- Sign Up Form -->
+            <div class="col" id="signup">
+                <p>Ready for your next thrill and adventure?</p>
+                <strong>
+                    <p>JOIN US!</p>
+                </strong>
+                <form action="/admin/newuser" id="signup-form"method="POST">
+                    <input type="text" name="firstName" placeholder="First Name" class="formbox">
+                    <input type="text" name="lastName" placeholder="Last Name"class="formbox">
+                    <input type="text" name="email" placeholder="Email Address"class="formbox">
+                    <button type="submit" value="upload">Sign Up</button>
+                </form>
+            </div>
         </div>
-        <!-- Sign Up Form -->
-        <div id="signup">
-            <form action="/admin/newuser" method="POST">
-                <input type="text" name="firstName" placeholder="First Name">
-                <input type="text" name="lastName" placeholder="Last Name">
-                <input type="text" name="email" placeholder="Email Address">
-                <button type="submit" value="upload">Sign Up</button>
-            </form>
-        </div>
-        <!-- News -->
-        <div id="news">
-            <h2>News</h2>
-            <img src="https://via.placeholder.com/150" alt="">
-        </div>
-        <!-- Events -->
-        <div id="events">
-            <h2>Events</h2>
-            <img src="https://via.placeholder.com/150" alt="">
+        <div class="row">
+            <!-- News -->
+            <div class="col" id="news">
+                <h2>News</h2>
+                <ul>
+                    <li class="news-article">
+                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-article-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                    <li class="news-article">
+                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-article-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                    <li class="news-article">
+                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-article-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Events -->
+            <div class="col" id="event">
+                <h2>Events</h2>
+                <ul>
+                    <li class="event-article">
+                        <img src="https://via.placeholder.com/150" alt="event image">
+                        <div class="event-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                    <li class="event-article">
+                        <img src="https://via.placeholder.com/150" alt="event image">
+                        <div class="event-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- Gallery -->
         <div id="gallery">

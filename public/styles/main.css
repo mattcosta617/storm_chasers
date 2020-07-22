@@ -1,3 +1,76 @@
+/* Reset */
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Layout */
 body {
     background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* News Section */
+#news ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.news-article {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.news-article-text {
+    margin-left: 8px;
+}
+
+/* Event Section */
+#event ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.event-article {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.event-text {
+    margin-left: 8px;
+}
+
+/* Sign Up Section */
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formbox {
+    margin: 4px;
+}
+
+/* Hero Image */
+
+#hero-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
