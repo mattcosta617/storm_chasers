@@ -5,6 +5,11 @@
 <body id="landing-page-body">
 <!-- Header -->
     <%- include('partials/header') %>
+      <!-- Sign Up Confirmation -->
+    <div class="signup-overlay">
+        <div id="signup-confirm">
+        </div>
+    </div>
     <main class="container">
         <!-- Hero Image -->
         <div id="col">
@@ -30,6 +35,7 @@
                 <div class="map-sightings">
                 </div>
             </div>
+          
             <!-- Sign Up Form -->
             <div class="col-5">
                 <div id="signup">
@@ -38,10 +44,10 @@
                         <p>JOIN US!</p>
                     </strong>
                     <form action="/admin/newuser" id="signup-form"method="POST">
-                        <input type="text" name="firstName" placeholder="First Name" class="formbox">
+                        <input type="text" name="firstName" placeholder="First Name" class="formbox"id="firstName">
                         <input type="text" name="lastName" placeholder="Last Name"class="formbox">
                         <input type="text" name="email" placeholder="Email Address"class="formbox">
-                        <button type="submit" value="upload">Sign Up</button>
+                        <button id="signup-btn" type="submit" value="upload">Sign Up</button>
                     </form>
                 </div>
             </div>
