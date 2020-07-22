@@ -5,3 +5,7 @@ $('#signup-btn').click(function(){
     "display","flex");
 })
 
+$('.signup-overlay').click(function(){
+  $('.signup-overlay').css(
+    "display","none");
+})
