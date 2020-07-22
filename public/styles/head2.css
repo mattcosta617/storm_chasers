@@ -2,17 +2,21 @@
 * HEADER
 ***************************************************/
 header{
-    background-color: #242E37 ;
+    background-color: #fff;
     height: 85px;
+    
+}
+
+#stormTop {
+   position: relative;
+   bottom: 10px;
+   left: 40%;
+   right: 50%;
 }
 
 .navbar-collapse{
     display: flex;
     justify-items: center;
-}
-
-.navbar2 {
-    background-color: #fff;
 }
 
 .navbar-brand{
@@ -29,7 +33,7 @@ header{
     font-size: 30px;
     line-height: 40px;
 
-    color: #FFFFFF;
+    color: #000;
 }
 
 .nav-link {
@@ -42,7 +46,7 @@ header{
     margin-left: 75px;
 
     top: 38.46px;
-    color: #FFFFFF;
+    color: #000;
 }
 
 /* 
