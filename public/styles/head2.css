@@ -1,0 +1,106 @@
+/* 
+* HEADER
+***************************************************/
+header{
+    background-color: #fff;
+    height: 85px;
+    
+}
+
+#stormTop {
+   position: relative;
+   left: 40%;
+   right: 50%;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-items: center;
+}
+
+.navbar-brand{
+    /* Storm ChaserZ */
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 92px;
+    top: 20px;
+
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #000;
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 15px;
+    margin-left: 75px;
+
+    top: 38.46px;
+    color: #000;
+}
+
+/* 
+* FOOTER
+***************************************************/
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+.footer-container-top{
+    padding-top: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 225px;
+    color: white;
+}
+
+.footer-container-bottom{
+    align-content: center;
+    background-color: black;
+    height: 110.2px;
+}
+
+.social {
+    justify-content: center;
+    display: flex;
+    color: black;
+}
+
+.icon{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10px 10px 10px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.legal{
+    justify-content: center;
+    display: flex;
+}
+
+.legal > div{
+    padding-left: 7px;
+}
+
+li{
+    list-style: none;
+    color: white;
+}
