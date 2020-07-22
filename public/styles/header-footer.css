@@ -1,0 +1,39 @@
+header{
+    background-color: #242E37 ;
+    height: 85px;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-items: center;
+}
+
+.navbar-brand{
+    /* Storm ChaserZ */
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 92px;
+    top: 20px;
+
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #FFFFFF;
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 15px;
+    margin-left: 75px;
+
+    top: 38.46px;
+    color: #FFFFFF;
+}
