@@ -1,3 +1,6 @@
+/* 
+* HEADER
+***************************************************/
 header{
     background-color: #242E37 ;
     height: 85px;
@@ -36,4 +39,32 @@ header{
 
     top: 38.46px;
     color: #FFFFFF;
+}
+
+/* 
+* FOOTER
+***************************************************/
+
+.footer-container-top{
+    background-color: rgb(214, 255, 214);
+    height: 274.33px;
+}
+
+.footer-container-bottom{
+    background-color: rgb(128, 128, 128);
+    height: 129.2px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: darkmagenta;
 }
