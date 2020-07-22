@@ -29,3 +29,19 @@ h1 {
 .news-article-text {
     margin-left: 8px;
 }
+
+/* Event Section */
+#event ul{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.event-article {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.event-text {
+    margin-left: 8px;
+}
