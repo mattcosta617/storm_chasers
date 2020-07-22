@@ -132,6 +132,14 @@ border-radius: 5px;
     align-items: center;
     background-image: url("https://picsum.photos/1394/219");
     height: 219px;
+    color: #ffffff;
+}
+
+#hero-search{
+    width: 560px;
+    height: 42px;
+    padding: 8px;
+    margin: 24px;
 }
 /* Tagline */
 #tagline {
