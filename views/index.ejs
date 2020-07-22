@@ -4,7 +4,7 @@
 <%- include('partials/head') %>
 <body id="landing-page-body">
     <!-- Sign Up Confirmation -->
-    <div class="signup-overlay">
+    <!-- <div class="signup-overlay">
         <div id="signup-confirm">
             <p>Success!</p>
             <p>We've sent your sign-up request to our Admin team.</p>
@@ -12,7 +12,7 @@
             <p>dwightschrute@dundermifflin.com</p>
             <p>You should receive an email confirmation shortly.</p>
         </div>
-    </div>
+    </div> -->
 <!-- Header -->
     <%- include('partials/header') %>
     <main class="container">
@@ -32,12 +32,8 @@
         <div class="row">
             <!-- Map -->
             <div class="col-7" id="map">
-                <div class="map-action">
-                </div>
                 <div class="map-detail">
-                    <iframe width="552" height="318" src="https://embed.windy.com/embed2.html?lat=35.228&lon=-117.290&detailLat=35.228&detailLon=-117.290&width=650&height=450&zoom=6&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
-                </div>
-                <div class="map-sightings">
+                    <iframe width="100%" height="100%" src="https://embed.windy.com/embed2.html?lat=35.228&lon=-117.290&detailLat=35.228&detailLon=-117.290&width=650&height=450&zoom=6&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
                 </div>
             </div>
           
@@ -122,12 +118,17 @@
             <div class="col" >
                 <h2>Gallery</h2>
                 <div class="row row-cols-2" id="gallery">
-                    <img src="../images/Gallery Image (Largest Photo _ Left).jpg" class="img-fluid" alt="Responsive image">
-                    <img src="../images/Gallery Image (Upper Right).jpg" class="img-fluid" alt="Responsive image">
-                    <img src="../images/Gallery Image (Bottom Right).jpg" class="img-fluid" alt="Responsive image">
-                    <div class="col" id="gallery-image-L"></div>
-                    <div class="col" id="gallery-image-M"></div>  
-                    <div class="col" id="gallery-image-M"></div>    
+                    <div class="col" id="gallery-image-L">
+                        <img src="../images/Gallery Image (Largest Photo _ Left).jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="col" id="gallery-image-M">
+                        <div class="gallery-image-M1">
+                            <img src="../images/Gallery Image (Upper Right).jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+                        <div class="gallery-image-M1">
+                            <img src="../images/Gallery Image (Bottom Right).jpg" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -136,11 +137,7 @@
             <div class="col" id="About">
                 <h2>About</h2>
                 <div class="about-Image">
-                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
-                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
-                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
-                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
-                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
+                    <img src="../images/About Us.png" class="profile" alt="Profile picture of team">
                     <div class="about-Description">
                         <p>We combine weather data, technology, and human insight to create fun storm-chasing experiences.</p>
                         <br>
