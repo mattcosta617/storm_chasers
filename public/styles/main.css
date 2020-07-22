@@ -157,3 +157,25 @@ border-radius: 5px;
 .about-Image {
     display: flex;
 }
+
+/* Map Section */
+
+#map{
+    display: flex;
+    flex-direction: row;
+}
+
+.map-action{
+    background-color: #000000;
+    width: 38px;
+}
+
+.map-detail{
+    background-color: #ffffff;
+    width: 552px;
+}
+
+.map-sightings{
+    background-color: #3D4567;
+    width: 236px;
+}
