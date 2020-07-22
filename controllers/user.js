@@ -28,7 +28,9 @@ router.post('/newuser', function(req, res){
 console.log(newUser);
     // return res.json({
     //   data: newUser,
-    res.redirect('/')
+    setTimeout(function(){
+      res.redirect('/')
+    }, 7000)
     })
   });
 // });

@@ -3,6 +3,16 @@
 <!-- Head -->
 <%- include('partials/head') %>
 <body id="landing-page-body">
+    <!-- Sign Up Confirmation -->
+    <div class="signup-overlay">
+        <div id="signup-confirm">
+            <p>Success!</p>
+            <p>We've sent your sign-up request to our Admin team.</p>
+            <p>We'll use your email address</p>
+            <p>dwightschrute@dundermifflin.com</p>
+            <p>You should receive an email confirmation shortly.</p>
+        </div>
+    </div>
 <!-- Header -->
     <%- include('partials/header') %>
     <main class="container">
@@ -25,11 +35,12 @@
                 <div class="map-action">
                 </div>
                 <div class="map-detail">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6509202.448614369!2d-123.8103776706675!3d37.192592312995316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1595438245027!5m2!1sen!2sus" width="552" height="318" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe width="552" height="318" src="https://embed.windy.com/embed2.html?lat=35.228&lon=-117.290&detailLat=35.228&detailLon=-117.290&width=650&height=450&zoom=6&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
                 </div>
                 <div class="map-sightings">
                 </div>
             </div>
+          
             <!-- Sign Up Form -->
             <div class="col-5">
                 <div id="signup">
@@ -38,10 +49,10 @@
                         <p>JOIN US!</p>
                     </strong>
                     <form action="/admin/newuser" id="signup-form"method="POST">
-                        <input type="text" name="firstName" placeholder="First Name" class="formbox">
+                        <input type="text" name="firstName" placeholder="First Name" class="formbox"id="firstName">
                         <input type="text" name="lastName" placeholder="Last Name"class="formbox">
                         <input type="text" name="email" placeholder="Email Address"class="formbox">
-                        <button type="submit" value="upload">Sign Up</button>
+                        <button id="signup-btn" type="submit" value="upload">Sign Up</button>
                     </form>
                 </div>
             </div>
@@ -52,24 +63,27 @@
                 <h2>News</h2>
                 <ul>
                     <li class="news-article">
-                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-image1">
+                        </div>
                         <div class="news-article-text">
-                            <p>News Article</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                            <p>Mega Storm Hits Southern California</p>
+                            <p>The same week we saw a record-early, sixth tropical storm (Fay) develop in the Atlantic, NOAA announced an official ENSO La Nina Watch. Which means, over the next six months, conditions will be favorable for a La Nina to develop.</p>
                         </div>
                     </li>
                     <li class="news-article">
-                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-image2">
+                        </div>
                         <div class="news-article-text">
-                            <p>News Article</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                            <p>After the Storm Clears, find the best sunsets</p>
+                            <p>At this point, surfers are probably getting excited; after all more storms equal more surf, right? But they need to be careful what they wish for. More storms also bring more chances for destruction, including major landfalling hurricanes.</p>
                         </div>
                     </li>
                     <li class="news-article">
-                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-image3">
+                        </div>
                         <div class="news-article-text">
-                            <p>News Article</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                            <p>Ocean Freighters take a Massive Beating</p>
+                            <p>One signal, the latest Atlantic sea surface temperature forecast for the peak of the hurricane season, offers a slightly contrasting view. When researchers looked at the four past seasons most similar to what we expect this fall.</p>
                         </div>
                     </li>
                 </ul>
@@ -80,22 +94,22 @@
                 <div class="event-block">
                     <ul>
                         <li class="event-article">
-                            <div class="event-image">
+                            <div class="event-image1">
                             </div>
                             <div class="event-text">
-                                <a href="">News Article</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit</p>
-                                <strong><p>Date</p></strong>
+                                <strong><a href="">Dienstag 19-5-20 | Casual Server</a></strong>
+                                <p>Fabian Fero and GERMAN INFINITE FLIGHT ALLIANCE</p>
+                                <strong><p>JUL 18</p></strong>
                                 <a href="">RSVP</a>
                             </div>
                         </li>
                         <li class="event-article">
-                            <div class="event-image">
+                            <div class="event-image2">
                             </div>
                             <div class="event-text">
-                                <a href="">News Article</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit</p>
-                                <strong><p>Date</p></strong>
+                                <strong><a href="">Dienstag 19-5-20 | Casual Server</a></strong>
+                                <p>Fabian Fero and GERMAN INFINITE FLIGHT ALLIANCE</p>
+                                <strong><p>JUL 21</p></strong>
                                 <a href="">RSVP</a>
                             </div>
                         </li>
@@ -108,6 +122,9 @@
             <div class="col" >
                 <h2>Gallery</h2>
                 <div class="row row-cols-2" id="gallery">
+                    <img src="../images/Gallery Image (Largest Photo _ Left).jpg" class="img-fluid" alt="Responsive image">
+                    <img src="../images/Gallery Image (Upper Right).jpg" class="img-fluid" alt="Responsive image">
+                    <img src="../images/Gallery Image (Bottom Right).jpg" class="img-fluid" alt="Responsive image">
                     <div class="col" id="gallery-image-L"></div>
                     <div class="col" id="gallery-image-M"></div>  
                     <div class="col" id="gallery-image-M"></div>    
