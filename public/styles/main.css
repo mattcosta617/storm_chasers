@@ -36,6 +36,14 @@ h2 {
     margin-bottom: 24px;
 }
 
+button {
+width: 141px;
+height: 41px;
+background-color: var(--yellow);
+border: 0.5px solid #000000;
+border-radius: 5px;
+}
+
 /* News Section */
 #news ul{
     display: flex;
@@ -91,17 +99,28 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    padding: 8px;
+    background-color: var(--purple);
+    padding: 16px;
+    color: #ffffff;
 }
 
 #signup-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .formbox {
+    height: 35px;
+    width: 332px;
+    border-radius: 5px;
+    padding: 8px;
     margin: 4px;
+}
+
+#signup-form button{
+   margin-top: 8px;
+   text-transform: uppercase;
 }
 
 /* Hero Image */
