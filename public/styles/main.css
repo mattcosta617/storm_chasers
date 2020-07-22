@@ -187,3 +187,37 @@ border-radius: 5px;
     background-color: #3D4567;
     width: 236px;
 }
+
+/* Gallery Section */
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1392px;
+    height: 578px;
+}
+
+#gallery-image-L{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gray);
+    flex: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 508px;
+    margin: 16px;
+}
+
+#gallery-image-M{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    background-color: var(--gray);
+    flex: auto;
+    width: 100%;
+    max-width: 421px;
+    height: 249px;
+    margin: 16px;
+}
