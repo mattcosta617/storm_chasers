@@ -1,17 +1,35 @@
 /* Reset */
 *{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* CSS Variables*/
+:root {
+    /* Brand Colors*/
+    --background: #242E37;
+    --gray: #9F9EA5;
+    --purple: #464D77;
+    --yellow: rgba(255, 225, 3, 0.9);
+  }
+
 /* Layout */
 body {
-    background-color: aquamarine;
+    background-color: var(--background);
 }
 
 h1 {
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 24px;
 }
 
 /* News Section */
@@ -73,6 +91,18 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("https://picsum.photos/1394/219");
+    height: 219px;
+}
+/* Tagline */
+#tagline {
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 16px 0px 16px 0px;
 }
 
 /* About Section */
