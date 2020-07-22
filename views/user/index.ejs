@@ -8,10 +8,9 @@
     <main>
         <div>
             <h1>Users</h1>
-        <%= users %>
         <% users.forEach((user) => { %>
           
-              <h4><%= user.user %></h4>
+              <h4><%= user.firstName + " " + user.lastName + " " + user.email%></h4>
       <% }); %>
         </div>
     </main>
