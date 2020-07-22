@@ -5,6 +5,11 @@
 <body id="landing-page-body">
 <!-- Header -->
     <%- include('partials/header') %>
+      <!-- Sign Up Confirmation -->
+    <div class="signup-overlay">
+        <div id="signup-confirm">
+        </div>
+    </div>
     <main class="container">
         <!-- Hero Image -->
         <div id="col">
@@ -30,6 +35,7 @@
                 <div class="map-sightings">
                 </div>
             </div>
+          
             <!-- Sign Up Form -->
             <div class="col-5">
                 <div id="signup">
@@ -38,10 +44,10 @@
                         <p>JOIN US!</p>
                     </strong>
                     <form action="/admin/newuser" id="signup-form"method="POST">
-                        <input type="text" name="firstName" placeholder="First Name" class="formbox">
+                        <input type="text" name="firstName" placeholder="First Name" class="formbox"id="firstName">
                         <input type="text" name="lastName" placeholder="Last Name"class="formbox">
                         <input type="text" name="email" placeholder="Email Address"class="formbox">
-                        <button type="submit" value="upload">Sign Up</button>
+                        <button id="signup-btn" type="submit" value="upload">Sign Up</button>
                     </form>
                 </div>
             </div>
@@ -52,24 +58,27 @@
                 <h2>News</h2>
                 <ul>
                     <li class="news-article">
-                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-image1">
+                        </div>
                         <div class="news-article-text">
-                            <p>News Article</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                            <p>Mega Storm Hits Southern California</p>
+                            <p>The same week we saw a record-early, sixth tropical storm (Fay) develop in the Atlantic, NOAA announced an official ENSO La Nina Watch. Which means, over the next six months, conditions will be favorable for a La Nina to develop.</p>
                         </div>
                     </li>
                     <li class="news-article">
-                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-image2">
+                        </div>
                         <div class="news-article-text">
-                            <p>News Article</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                            <p>After the Storm Clears, find the best sunsets</p>
+                            <p>At this point, surfers are probably getting excited; after all more storms equal more surf, right? But they need to be careful what they wish for. More storms also bring more chances for destruction, including major landfalling hurricanes.</p>
                         </div>
                     </li>
                     <li class="news-article">
-                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-image3">
+                        </div>
                         <div class="news-article-text">
-                            <p>News Article</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                            <p>Ocean Freighters take a Massive Beating</p>
+                            <p>One signal, the latest Atlantic sea surface temperature forecast for the peak of the hurricane season, offers a slightly contrasting view. When researchers looked at the four past seasons most similar to what we expect this fall.</p>
                         </div>
                     </li>
                 </ul>
@@ -80,22 +89,22 @@
                 <div class="event-block">
                     <ul>
                         <li class="event-article">
-                            <div class="event-image">
+                            <div class="event-image1">
                             </div>
                             <div class="event-text">
-                                <a href="">News Article</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit</p>
-                                <strong><p>Date</p></strong>
+                                <strong><a href="">Dienstag 19-5-20 | Casual Server</a></strong>
+                                <p>Fabian Fero and GERMAN INFINITE FLIGHT ALLIANCE</p>
+                                <strong><p>JUL 18</p></strong>
                                 <a href="">RSVP</a>
                             </div>
                         </li>
                         <li class="event-article">
-                            <div class="event-image">
+                            <div class="event-image2">
                             </div>
                             <div class="event-text">
-                                <a href="">News Article</a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit</p>
-                                <strong><p>Date</p></strong>
+                                <strong><a href="">Dienstag 19-5-20 | Casual Server</a></strong>
+                                <p>Fabian Fero and GERMAN INFINITE FLIGHT ALLIANCE</p>
+                                <strong><p>JUL 21</p></strong>
                                 <a href="">RSVP</a>
                             </div>
                         </li>
@@ -108,6 +117,9 @@
             <div class="col" >
                 <h2>Gallery</h2>
                 <div class="row row-cols-2" id="gallery">
+                    <img src="../images/Gallery Image (Largest Photo _ Left).jpg" class="img-fluid" alt="Responsive image">
+                    <img src="../images/Gallery Image (Upper Right).jpg" class="img-fluid" alt="Responsive image">
+                    <img src="../images/Gallery Image (Bottom Right).jpg" class="img-fluid" alt="Responsive image">
                     <div class="col" id="gallery-image-L"></div>
                     <div class="col" id="gallery-image-M"></div>  
                     <div class="col" id="gallery-image-M"></div>    
