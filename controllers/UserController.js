@@ -6,7 +6,7 @@ const db = require('../models/');
 
 // Index Route
 router.get('/', (req,res) => {
-  res.render('index');
+  res.render('user/index');
 })
 
 

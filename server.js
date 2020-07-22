@@ -26,7 +26,7 @@ app.get('/', (req,res) => {
 });
 
 // Admin Routes
-app.use('/admin', userCtrl)
+app.use('/admin', userCtrl);
 
 // Server Listener
 app.listen(PORT, ()=>{
