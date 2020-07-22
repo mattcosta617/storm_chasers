@@ -158,11 +158,13 @@ border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px;
+    width: 80%;
 }
 
 .formbox {
     height: 35px;
-    width: 332px;
+    width:100%;
     border-radius: 5px;
     padding: 8px;
     margin: 4px;
