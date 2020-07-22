@@ -45,3 +45,23 @@ h1 {
 .event-text {
     margin-left: 8px;
 }
+
+/* Sign Up Section */
+
+#signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formbox {
+    margin: 4px;
+}
