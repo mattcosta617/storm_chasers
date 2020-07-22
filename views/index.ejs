@@ -5,44 +5,140 @@
 <body id="landing-page-body">
 <!-- Header -->
     <%- include('partials/header') %>
-    <main>
+    <main class="container">
         <!-- Hero Image -->
-        <div id="hero-image">
-            <img src="https://picsum.photos/600/200">
-            <div>
-                <p>Weather Placeholder</p>
+        <div id="col">
+            <div id="hero-image">
+                <form>
+                    <input type="text" placeholder="Search for a City" id="hero-search"></input>
+                </form>
+                <p>San Jose, CA 70°F</p>
             </div>
         </div>
         <!-- Tagline -->
+<<<<<<< HEAD
         <h1>Find the Storm. Be the Storm</h1>
         
         <!-- Map -->
         <div id="map">
             <img src="https://via.placeholder.com/150" alt="">
+=======
+        <div id="tagline">
+            <h1>Find the Storm. Be the Storm</h1>
+>>>>>>> 45be3d47aff23e1287980789548a9f81d7a78715
         </div>
-        <!-- Sign Up Form -->
-        <div id="signup">
-            <form action="/admin/newuser" method="POST">
-                <input type="text" name="firstName" placeholder="First Name">
-                <input type="text" name="lastName" placeholder="Last Name">
-                <input type="text" name="email" placeholder="Email Address">
-                <button type="submit" value="upload">Sign Up</button>
-            </form>
+        <div class="row">
+            <!-- Map -->
+            <div class="col-7" id="map">
+                <div class="map-action">
+                </div>
+                <div class="map-detail">
+                    <p>Map Placeholder</p>
+                </div>
+                <div class="map-sightings">
+                </div>
+            </div>
+            <!-- Sign Up Form -->
+            <div class="col-5">
+                <div id="signup">
+                    <p>Ready for your next thrill and adventure?</p>
+                    <strong>
+                        <p>JOIN US!</p>
+                    </strong>
+                    <form action="/admin/newuser" id="signup-form"method="POST">
+                        <input type="text" name="firstName" placeholder="First Name" class="formbox">
+                        <input type="text" name="lastName" placeholder="Last Name"class="formbox">
+                        <input type="text" name="email" placeholder="Email Address"class="formbox">
+                        <button type="submit" value="upload">Sign Up</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- News -->
-        <div id="news">
-            <h2>News</h2>
-            <img src="https://via.placeholder.com/150" alt="">
-        </div>
-        <!-- Events -->
-        <div id="events">
-            <h2>Events</h2>
-            <img src="https://via.placeholder.com/150" alt="">
+        <div class="row">
+            <!-- News -->
+            <div class="col-7" id="news">
+                <h2>News</h2>
+                <ul>
+                    <li class="news-article">
+                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-article-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                    <li class="news-article">
+                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-article-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                    <li class="news-article">
+                        <img src="https://via.placeholder.com/150" alt="article image">
+                        <div class="news-article-text">
+                            <p>News Article</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit, excepturi autem alias distinctio sapiente architecto tempore eaque voluptas asperiores voluptates a velit. Quis tenetur illo at.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Events -->
+            <div class="col-5" id="event">
+                <h2>Events</h2>
+                <div class="event-block">
+                    <ul>
+                        <li class="event-article">
+                            <div class="event-image">
+                            </div>
+                            <div class="event-text">
+                                <a href="">News Article</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit</p>
+                                <strong><p>Date</p></strong>
+                                <a href="">RSVP</a>
+                            </div>
+                        </li>
+                        <li class="event-article">
+                            <div class="event-image">
+                            </div>
+                            <div class="event-text">
+                                <a href="">News Article</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error labore vel odio reprehenderit</p>
+                                <strong><p>Date</p></strong>
+                                <a href="">RSVP</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- Gallery -->
-        <div id="gallery">
-            <h2>Gallery</h2>
-            <img src="https://via.placeholder.com/150" alt="">
+        <div class="row">
+            <div class="col" >
+                <h2>Gallery</h2>
+                <div class="row row-cols-2" id="gallery">
+                    <div class="col" id="gallery-image-L"></div>
+                    <div class="col" id="gallery-image-M"></div>  
+                    <div class="col" id="gallery-image-M"></div>    
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="row">
+            <div class="col" id="About">
+                <h2>About</h2>
+                <div class="about-Image">
+                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
+                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
+                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
+                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
+                    <img src="https://via.placeholder.com/100x200" class="profile" alt="">
+                    <div class="about-Description">
+                        <p>We combine weather data, technology, and human insight to create fun storm-chasing experiences.</p>
+                        <br>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 <!-- Footer -->
