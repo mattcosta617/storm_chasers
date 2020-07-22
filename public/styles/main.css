@@ -32,6 +32,10 @@ h2 {
     font-size: 24px;
 }
 
+.row {
+    margin-bottom: 24px;
+}
+
 /* News Section */
 #news ul{
     display: flex;
@@ -42,26 +46,35 @@ h2 {
     display: flex;
     flex-direction: row;
     padding: 8px;
+    flex-wrap: wrap;
 }
 
 .news-article-text {
     margin-left: 8px;
+    max-width: 300px;
 }
 
 /* Event Section */
-#event ul{
+.event-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
 }
+
 .event-article {
     display: flex;
     flex-direction: row;
     padding: 8px;
+    flex-wrap: wrap;
 }
 
 .event-text {
     margin-left: 8px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Sign Up Section */
