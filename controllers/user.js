@@ -30,7 +30,7 @@ console.log(newUser);
     //   data: newUser,
     setTimeout(function() {
       res.redirect('/')
-    }, 7000)
+    }, 5000)
     })
   });
 // });
