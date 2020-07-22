@@ -4,7 +4,6 @@
 <%- include('../partials/head2', {title: ' - All Users'}) %>
 <body id="adminPage">
 <!-- Header -->
-<<<<<<< HEAD
     <%- include('../partials/header') %>
     <main>
 
@@ -15,18 +14,6 @@
                 <div class="col-12">
                     <h1 id="dashboard-header">Dashboard</h1>
                 </div>
-=======
-    <%- include('../partials/dashHeader') %>
-    <main class ="container">
-        <label for="dashboard" id="dashLabel">Dashboard</label>
-        <div class="mainBox">
-            <div class="innerbox1 row">
-                <h1>Members</h1>
-            <% users.forEach((user) => { %>
-          
-                 <li id="usersList"><a href="/admin/<%= user.id%>"><%= user.firstName + " " + user.lastName + " " + user.email + " created: " + user.createdAt%></a></li>
-            <% }); %> 
->>>>>>> submaster
             </div>
             <div class="row analytics db">
                 <div class="col-12">

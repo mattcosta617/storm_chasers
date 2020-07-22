@@ -389,7 +389,6 @@ border-radius: 5px;
     list-style: none;
 }
 
-<<<<<<< HEAD
 .button-holder{
     align-items: flex-start;
 }
@@ -406,22 +405,3 @@ border-radius: 5px;
 .accept{
     background-color: #7FDB86;
 }
-=======
-.innerbox1 a {
-    text-decoration: none;
-    color: black;
-}
-
-.innerbox1 a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-/* .innerbox2 {
-    position: relative;
-    width: 354px;
-    height: 400px;
-    background: #D5D5D5;
-    border-radius: 10px;
-} */
->>>>>>> submaster
