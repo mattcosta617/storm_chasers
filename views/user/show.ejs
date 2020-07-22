@@ -4,11 +4,24 @@
 <%- include('../partials/head', {title: ' - User'}) %>
 <body id="">
 <!-- Header -->
-    <%- include('partials/header') %>
+    <%- include('../partials/header') %>
     <main>
-
+        <%= user.firstName + " " + user.lastName + " " + user.email%>
+        <form action="/admin/<%=user._id %>?_method=PUT" method="POST">
+            <div>
+                <label for="user">User</label>
+                <textarea id="firstNameEdit" name="firstName"><%= user.firstName %></textarea>
+                <textarea id="lastNameEdit" name="lastName"><%= user.lastName %></textarea>
+                <textarea id="emailEdit" name="email"><%= user.email %></textarea>
+            </div>
+            <button type="submit" id="updateButton">Update Language</button>
+            
+          </form>
+        <form method="POST" action="/admin/<%=user.id%>?_method=DELETE">
+            <button type="submit" class="button">Delete</button>
+        </form>
     </main>
 <!-- Footer -->
-    <%- include('partials/footer') %>
+    <%- include('../partials/footer') %>
 </body>
 </html>
