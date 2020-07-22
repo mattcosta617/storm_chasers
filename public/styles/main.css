@@ -78,8 +78,19 @@ border-radius: 5px;
     flex-wrap: wrap;
 }
 
-.event-image {
+.event-image1 {
     overflow: hidden;
+    background-image: url("../images/Event\ 1.jpg");
+    background-size: cover;
+    max-width: 200px;
+    width: 200px;
+    background-color: var(--gray);
+}
+
+.event-image2 {
+    overflow: hidden;
+    background-image: url("../images/Event\ 2.jpg");
+    background-size: cover;
     max-width: 200px;
     width: 200px;
     background-color: var(--gray);
