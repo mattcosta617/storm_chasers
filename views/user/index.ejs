@@ -5,19 +5,41 @@
 <body id="adminPage">
 <!-- Header -->
     <%- include('../partials/header') %>
-    <main class ="container">
-        <label for="dashboard" id="dashLabel">Dashboard</label>
-        <div class="mainBox">
-            <div class="innerbox1 row">
-                <h1>Members</h1>
-            <% users.forEach((user) => { %>
-          
-                 <li id="usersList"><a href="/admin/<%= user.id%>"><%= user.firstName + " " + user.lastName + " " + user.email + " created: " + user.createdAt%></a></li>
-            <% }); %> 
+    <main>
+
+        <div class="container">
+
+            
+            <div class="row dashboard db">
+                <div class="col-12">
+                    <h1 id="dashboard-header">Dashboard</h1>
+                </div>
             </div>
+            <div class="row analytics db">
+                <div class="col-12">
+                    <h1 id="analytics-header">Analytics</h1>
+                </div>
+            </div>
+            <div class="row members db">
+                <div class=" members-col col-12">
+                    <div class="innerbox">
+                        <h1 id="members-header">Members</h1>
+                        <% users.forEach((user) => { %>
+
+                            <li id="usersList"><a href="/admin/<%= user.id%>"><%= user.firstName + " " + user.lastName + " " + user.email + " created: " + user.createdAt%></a></li>
+                            <div class="button-holder">
+                                <button class="deny">Deny</button>
+                                <button class="accept">Accept</button>
+                            </div>
+                        <% }); %> 
+                    </div>
+                </div>
+      
+            </div>
+
+
         </div>
+
     </main>
-<!-- Footer -->
-    <%- include('../partials/footer') %>
 </body>
 </html>
