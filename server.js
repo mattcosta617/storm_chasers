@@ -4,11 +4,15 @@ const methodOverride = require('method-override');
 const bodyParser = require('body-parser');
 const PORT = 4000;
 
+// Controllers
+const ctrl = require('./controllers');
+
 // View Engine
 app.set('view engine','ejs');
 
 // Image Folder
 app.use(express.static(`${__dirname}/public`));
+
 
 // MiddleWare
 // Method Override
@@ -17,8 +21,7 @@ app.use(methodOverride('_method'));
 // Express BodyParser
 app.use(express.urlencoded({extended: false}));
 
-// Controllers
-const userCtrl = require('./controllers/userController');
+
 
 // Routes
 app.get('/', (req,res) => {
@@ -26,7 +29,7 @@ app.get('/', (req,res) => {
 });
 
 // Admin Routes
-app.use('/admin', userCtrl)
+app.use('/admin', ctrl.user);
 
 // Server Listener
 app.listen(PORT, ()=>{
