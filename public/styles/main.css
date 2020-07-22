@@ -261,6 +261,10 @@ border-radius: 5px;
     display: flex;
 }
 
+.profile{
+    max-width: 600px;
+}
+
 /* Map Section */
 
 #map{
