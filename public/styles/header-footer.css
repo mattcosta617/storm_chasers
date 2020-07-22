@@ -45,26 +45,55 @@ header{
 * FOOTER
 ***************************************************/
 
+footer{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
 .footer-container-top{
-    background-color: rgb(214, 255, 214);
-    height: 274.33px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 225px;
+    color: white;
 }
 
 .footer-container-bottom{
-    background-color: rgb(128, 128, 128);
-    height: 129.2px;
+    align-content: center;
+    background-color: black;
+    height: 110.2px;
 }
 
 .social {
+    justify-content: center;
     display: flex;
-    align-items: center;
+    color: black;
 }
 
 .icon{
+
     display: flex;
     align-items: center;
-    width: 75px;
-    height: 75px;
+    justify-content: center;
+    margin: 15px 10px 10px 10px;
+    width: 37px;
+    height: 37px;
     border-radius: 50%;
-    background-color: darkmagenta;
+    background-color: white;
+}
+
+.legal{
+    justify-content: center;
+    display: flex;
+}
+
+.legal > div{
+    padding-left: 7px;
+}
+
+li{
+    list-style: none;
+    color: white;
 }
