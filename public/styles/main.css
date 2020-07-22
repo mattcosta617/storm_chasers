@@ -120,10 +120,6 @@ h2 {
 
 /* About Section */
 
-#About {
-    display: flex;
-}
-
 .about-Description {
     background-color: #ffffff;
     display: flex;
