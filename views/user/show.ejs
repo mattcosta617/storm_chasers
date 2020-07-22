@@ -2,10 +2,10 @@
 <html lang="en">
 <!-- Head -->
 <%- include('../partials/head', {title: ' - User'}) %>
-<body id="">
+<body id="editPage">
 <!-- Header -->
     <%- include('../partials/header') %>
-    <main>
+    <main class ="container">
         <%= user.firstName + " " + user.lastName + " " + user.email%>
         <form action="/admin/<%=user._id %>?_method=PUT" method="POST">
             <div>
