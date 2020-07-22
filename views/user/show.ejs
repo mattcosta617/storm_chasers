@@ -5,7 +5,7 @@
 <body id="editPage">
 <!-- Header -->
     <%- include('../partials/header') %>
-    <main class ="container">
+    <main class ="container alignAllCenter">
         <%= user.firstName + " " + user.lastName + " " + user.email%>
         <form action="/admin/<%=user._id %>?_method=PUT" method="POST">
             <div>
@@ -14,7 +14,7 @@
                 <textarea id="lastNameEdit" name="lastName"><%= user.lastName %></textarea>
                 <textarea id="emailEdit" name="email"><%= user.email %></textarea>
             </div>
-            <button type="submit" id="updateButton">Update Language</button>
+            <button type="submit" id="updateButton">Update User</button>
             
           </form>
         <form method="POST" action="/admin/<%=user.id%>?_method=DELETE">
