@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-
+    text-align: center;
 }
 
 /* News Section */
@@ -64,4 +64,13 @@ h1 {
 
 .formbox {
     margin: 4px;
+}
+
+/* Hero Image */
+
+#hero-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
