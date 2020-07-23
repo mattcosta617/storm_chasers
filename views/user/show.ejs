@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<%- include('../partials/head', {title: ' - User'}) %>
+<body id="editPage">
+<!-- Header -->
+    <%- include('../partials/header') %>
+    <main class ="container alignAllCenter">
+        <%= user.firstName + " " + user.lastName + " " + user.email%>
+        <form action="/admin/<%=user._id %>?_method=PUT" method="POST">
+            <div>
+                <label for="user">User</label>
+                <textarea id="firstNameEdit" name="firstName"><%= user.firstName %></textarea>
+                <textarea id="lastNameEdit" name="lastName"><%= user.lastName %></textarea>
+                <textarea id="emailEdit" name="email"><%= user.email %></textarea>
+            </div>
+            <button type="submit" id="updateButton">Update User</button>
+            
+          </form>
+        <form method="POST" action="/admin/<%=user.id%>?_method=DELETE">
+            <button type="submit" class="button">Delete</button>
+        </form>
+    </main>
+<!-- Footer -->
+    <%- include('../partials/footer') %>
+</body>
+</html>
