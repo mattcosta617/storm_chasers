@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const connectionString = process.env.MONGODB_URI || 'mongodb://localhost:27017/stormChasers';
+const connectionString = process.env.MONGODB_URI('mongodb://localhost:27017/storm-chaserz');
 
 
 mongoose.connect(connectionString, {
