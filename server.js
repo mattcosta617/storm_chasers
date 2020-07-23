@@ -32,6 +32,6 @@ app.get('/', (req,res) => {
 app.use('/admin', ctrl.user);
 
 // Server Listener
-app.listen(PORT, ()=>{
+app.listen(PORT, () => {
   console.log(`This server is running on ${PORT}`);
-})
+});
